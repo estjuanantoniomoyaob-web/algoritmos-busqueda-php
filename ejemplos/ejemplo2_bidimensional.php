@@ -10,9 +10,9 @@ $matriz = [
 
 echo "Matriz:\n";
 
-for ($fila = 0; $fila < count($matriz); $fila++) {
+for ($fila = 1; $fila < count($matriz); $fila++) {
 
-    for ($columna = 0; $columna < count($matriz[$fila]); $columna++) {
+    for ($columna = 1; $columna < count($matriz[$fila]); $columna++) {
         echo $matriz[$fila][$columna] . " ";
     }
 
@@ -23,9 +23,9 @@ $buscar = readline("Ingrese el número que desea buscar: ");
 
 $encontrado = false;
 
-for ($fila = 0; $fila < count($matriz); $fila++) {
+for ($fila = 1; $fila < count($matriz); $fila++) {
 
-    for ($columna = 0; $columna < count($matriz[$fila]); $columna++) {
+    for ($columna = 1; $columna < count($matriz[$fila]); $columna++) {
 
         if ($matriz[$fila][$columna] == $buscar) {
 
