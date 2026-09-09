@@ -1,33 +1,46 @@
 <?php
 
-// EJEMPLO 1: ARREGLO UNIDIMENSIONAL
+// EJEMPLO 2: ARREGLO BIDIMENSIONAL
 
-$numeros = [10, 20, 30, 40, 50];
+$matriz = [
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+];
 
-$buscar = 30;
+echo "Matriz:\n";
+
+for ($fila = 0; $fila < count($matriz); $fila++) {
+
+    for ($columna = 0; $columna < count($matriz[$fila]); $columna++) {
+        echo $matriz[$fila][$columna] . " ";
+    }
+
+    echo "\n";
+}
+
+$buscar = readline("Ingrese el número que desea buscar: ");
 
 $encontrado = false;
 
-echo "Arreglo: ";
-print_r($numeros);
+for ($fila = 0; $fila < count($matriz); $fila++) {
 
-echo "Buscando el número: $buscar\n\n";
+    for ($columna = 0; $columna < count($matriz[$fila]); $columna++) {
 
-// Búsqueda lineal
-for ($i = 0; $i < count($numeros); $i++) {
+        if ($matriz[$fila][$columna] == $buscar) {
 
-    if ($numeros[$i] == $buscar) {
+            echo "Elemento encontrado: $buscar\n";
+            echo "Fila: $fila\n";
+            echo "Columna: $columna\n";
 
-        echo "Elemento encontrado: $buscar\n";
-        echo "Posición: $i\n";
-
-        $encontrado = true;
-        break;
+            $encontrado = true;
+            break 2;
+        }
     }
 }
 
 if (!$encontrado) {
-    echo "Elemento no encontrado\n";
+    echo "El elemento $buscar no se encuentra en la matriz.\n";
 }
 
 ?>
