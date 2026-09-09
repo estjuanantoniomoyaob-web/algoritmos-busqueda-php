@@ -19,7 +19,7 @@ for ($fila = 0; $fila < count($matriz); $fila++) {
     echo "\n";
 }
 
-$buscar = readline("Ingrese el número que desea buscar: ");
+$buscar = readline("\nIngrese el número que desea buscar: ");
 
 $encontrado = false;
 
@@ -29,9 +29,9 @@ for ($fila = 0; $fila < count($matriz); $fila++) {
 
         if ($matriz[$fila][$columna] == $buscar) {
 
-            echo "Elemento encontrado: $buscar\n";
-            echo "Fila: $fila\n";
-            echo "Columna: $columna\n";
+            echo "\nElemento encontrado: $buscar\n";
+            echo "Fila: " . ($fila + 1) . "\n";
+            echo "Columna: " . ($columna + 1) . "\n";
 
             $encontrado = true;
             break 2;
@@ -40,7 +40,7 @@ for ($fila = 0; $fila < count($matriz); $fila++) {
 }
 
 if (!$encontrado) {
-    echo "El elemento $buscar no se encuentra en la matriz.\n";
+    echo "\nEl elemento $buscar no se encuentra en la matriz.\n";
 }
 
 ?>
