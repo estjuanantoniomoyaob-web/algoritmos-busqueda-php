@@ -2,25 +2,26 @@
 
 ## Descripción
 
-Este proyecto contiene ejemplos de algoritmos de búsqueda implementados en PHP.
+Este proyecto contiene ejemplos de algoritmos de búsqueda realizados en PHP.
 
-## Algoritmos
+Se presentan dos ejemplos:
 
-- Búsqueda lineal en arreglo unidimensional.
-- Búsqueda binaria en arreglo unidimensional.
-- Búsqueda lineal en arreglo bidimensional.
+- Ejemplo 1: búsqueda en un arreglo unidimensional.
+- Ejemplo 2: búsqueda en un arreglo bidimensional.
 
 ## Requisitos
 
-- Tener instalado PHP 8 o superior.
+Para ejecutar los ejemplos se necesita:
 
-## Ejecución
+- Tener instalado PHP.
+- Una computadora con Windows, Linux o macOS.
+- Git es opcional si se desea descargar el proyecto mediante la terminal.
 
-Primero descargar o clonar el repositorio.
+## Estructura del proyecto
 
-Luego abrir una terminal dentro de la carpeta del proyecto.
+```text
+algoritmos-busqueda-php/
 
-### Búsqueda lineal
-
-```bash
-php busqueda_lineal.php
+├── README.md
+├── ejemplo1_unidimensional.php
+└── ejemplo2_bidimensional.php
