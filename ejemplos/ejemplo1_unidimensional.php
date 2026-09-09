@@ -1,7 +1,5 @@
 <?php
 
-// EJEMPLO 1: ARREGLO UNIDIMENSIONAL
-
 $numeros = [10, 20, 30, 40, 50];
 
 echo "Arreglo: ";
